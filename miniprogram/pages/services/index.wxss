@@ -1,0 +1,8 @@
+.service-list { display: flex; flex-direction: column; gap: 18rpx; }
+.service-row { display: flex; align-items: center; width: 100%; min-height: 180rpx; margin: 0; padding: 12rpx 22rpx 12rpx 6rpx; border: 0; border-radius: 22rpx; background: #fffdf9; color: #25292c; text-align: left; line-height: 1.6; }
+.art-wrap { width: 190rpx; flex-shrink: 0; }
+.row-copy { flex: 1; min-width: 0; }
+.row-title { font-size: 31rpx; font-weight: 500; margin-bottom: 9rpx; }
+.row-copy .muted { font-size: 23rpx; }
+.row-arrow { margin-left: 10rpx; font-size: 31rpx; color: #a27b56; }
+.consult { margin-top: 30rpx; }

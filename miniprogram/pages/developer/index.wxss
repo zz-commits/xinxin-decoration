@@ -1,0 +1,141 @@
+.page {
+  padding: 40rpx 32rpx 64rpx;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  margin-bottom: 32rpx;
+}
+
+.brand-logo {
+  width: 112rpx;
+  height: 112rpx;
+  margin-right: 24rpx;
+  border-radius: 24rpx;
+}
+
+.brand-name {
+  font-size: 38rpx;
+  font-weight: 600;
+}
+
+.brand-subtitle, .description, .footer {
+  color: #6e7477;
+  font-size: 25rpx;
+}
+
+.hero {
+  padding: 40rpx 36rpx;
+  background: #25292c;
+  color: #fff;
+  border-radius: 32rpx;
+  margin-bottom: 28rpx;
+}
+
+.eyebrow {
+  color: #d8ae85;
+  font-size: 24rpx;
+}
+
+.hero-title {
+  font-size: 46rpx;
+  font-weight: 600;
+  line-height: 1.4;
+  margin: 22rpx 0;
+}
+
+.hero-description {
+  color: #d5d7d7;
+  font-size: 26rpx;
+}
+
+.panel {
+  padding: 32rpx;
+  margin-bottom: 24rpx;
+  background: #fff;
+  border-radius: 28rpx;
+}
+
+.panel-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 28rpx;
+}
+
+.panel-title {
+  font-size: 30rpx;
+  font-weight: 600;
+}
+
+.badge {
+  padding: 6rpx 18rpx;
+  border-radius: 999rpx;
+  color: #9b641f;
+  background: #f7eddc;
+  font-size: 22rpx;
+}
+
+.badge-success {
+  color: #2f7a57;
+  background: #e8f3ed;
+}
+
+.status-title {
+  font-size: 28rpx;
+  margin-bottom: 10rpx;
+}
+
+.environment {
+  margin-top: 22rpx;
+  padding: 18rpx;
+  background: #f4f2ed;
+  border-radius: 14rpx;
+  font-size: 23rpx;
+  word-break: break-all;
+}
+
+.checked-at {
+  margin-top: 16rpx;
+}
+
+.primary-button {
+  margin-top: 28rpx;
+  background: #b85d2d;
+  color: #fff;
+  font-size: 28rpx;
+  border-radius: 18rpx;
+}
+
+.primary-button[disabled] {
+  background: #ebe8e1;
+  color: #7b7d7b;
+}
+
+.step {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 28rpx;
+}
+
+.step-number {
+  width: 44rpx;
+  height: 44rpx;
+  margin-right: 18rpx;
+  text-align: center;
+  border-radius: 50%;
+  background: #f5e5dc;
+  color: #a95126;
+  flex-shrink: 0;
+}
+
+.step .description {
+  margin-top: 6rpx;
+  word-break: break-word;
+}
+
+.footer {
+  margin-top: 32rpx;
+  text-align: center;
+}

@@ -1,0 +1,5 @@
+{
+  "triggers": [
+    { "name": "image-queue", "type": "timer", "config": "0 */1 * * * * *" }
+  ]
+}

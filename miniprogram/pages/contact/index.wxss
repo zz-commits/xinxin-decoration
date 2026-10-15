@@ -1,0 +1,12 @@
+.phone-row { width: 100%; display: flex; align-items: center; justify-content: space-between; margin: 22rpx 0 0; padding: 18rpx 0; border: 0; border-radius: 0; background: transparent; color: #333b36; text-align: left; line-height: 1.6; }
+.phone-row > text:first-child { font-size: 39rpx; font-weight: 500; letter-spacing: 1rpx; }
+.call-label { color: #ae592e; font-size: 24rpx; }
+.phone-row + .phone-row { border-top: 1rpx solid #e8e3d8; }
+.wechat-qr { display: block; width: 330rpx; height: 330rpx; margin: 26rpx auto; }
+.wechat-id { margin: 20rpx 0; word-break: break-all; }
+.store-block { padding: 10rpx 5rpx; }
+.store-address { font-size: 29rpx; color: #535d54; margin: 22rpx 0 12rpx; }
+.address-copy { padding-left: 0; text-align: left; margin-top: 14rpx; }
+.about { line-height: 1.9; }
+.staff-links { display: flex; flex-wrap: wrap; gap: 25rpx; margin-top: 46rpx; padding-top: 24rpx; border-top: 1rpx solid #ddd7cc; }
+.staff-links .text-link { padding-left: 0; color: #868a7f; font-size: 23rpx; }

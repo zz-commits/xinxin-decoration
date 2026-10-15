@@ -1,0 +1,12 @@
+<view class="screen">
+  <view wx:if="{{loading}}" class="loading-state">正在加载案例…</view>
+  <view wx:elif="{{error}}" class="error-state">{{error}}<button class="secondary-action" bindtap="refresh">重新加载</button></view>
+  <view wx:elif="{{!item}}" class="empty-state"><view class="empty-title">案例暂未发布或已下架</view><button class="text-link" bindtap="openContact">联系店铺</button></view>
+  <block wx:else>
+    <view class="page-kicker">实景安装案例</view><view class="page-title">{{item.title}}</view><view wx:if="{{item.community}}" class="page-intro">{{item.community}}</view><view class="tag-row"><text class="tag">{{item.locations.length}} 个安装位置</text><text class="tag">整套项目展示</text></view>
+    <view class="section"><image wx:for="{{item.images}}" wx:key="*this" class="gallery-image" src="{{item}}" mode="widthFix" data-url="{{item}}" bindtap="preview" /></view>
+    <view class="case-description">{{item.summary}}</view>
+    <view wx:if="{{item.locations.length}}" class="section"><view class="section-title">项目安装位置</view><view wx:for="{{item.locations}}" wx:key="name" class="surface location"><view class="location-name">{{item.name}}</view><view class="tag-row"><text wx:for="{{item.products}}" wx:for-item="product" wx:key="*this" class="tag">{{product}}</text></view><view wx:if="{{item.material}}" class="muted material">{{item.material}}</view></view></view>
+    <view class="section"><button class="primary-action" bindtap="openContact">咨询类似定制需求</button></view>
+  </block>
+</view>

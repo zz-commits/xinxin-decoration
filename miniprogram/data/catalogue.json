@@ -1,0 +1,76 @@
+{
+  "store": {
+    "_id": "main",
+    "name": "鑫新装饰",
+    "branchName": "四河小区店",
+    "description": "以不锈钢制品定制为主，提供栏杆、扶手、护栏、雨棚、彩钢房、阳光房、拉闸门窗、铝合金门窗及各类金属制品定制安装。按现场尺寸与实际需求，为不同安装位置组合合适的产品。",
+    "phones": ["15828637898", "18382302879"],
+    "wechatId": "",
+    "wechatQrImage": "",
+    "address": "四河路264号四河小区门口",
+    "businessHours": "",
+    "dianpingUrl": "https://m.dianping.com/shopshare/H610nJNJepCJLOpT?msource=Appshare2021&utm_source=shop_share&shoptype=90&shopcategoryid=25475&isoversea=0&shareid=mv7KH0WBYl_1791865312"
+  },
+  "services": [
+    {
+      "_id": "railings",
+      "title": "栏杆 · 扶手 · 护栏",
+      "subtitle": "阳台、楼梯与临边防护",
+      "description": "结合安装位置、使用习惯和现场尺寸，定制不锈钢栏杆、楼梯扶手及防护栏。可与门窗等产品组合设计，统一空间样式。",
+      "products": ["阳台栏杆", "楼梯扶手", "窗户护栏", "露台护栏"],
+      "materials": ["不锈钢材质按需求确认", "拉丝、镜面等表面效果可沟通", "结构与连接方式以现场方案为准"],
+      "variant": "railing",
+      "sortOrder": 10
+    },
+    {
+      "_id": "windows",
+      "title": "铝合金门窗",
+      "subtitle": "采光、通风与日常使用",
+      "description": "根据房屋结构与客户需要定制铝合金门窗，沟通开启方式、型材颜色、玻璃和五金配置，可与不锈钢防护产品搭配。",
+      "products": ["推拉窗", "平开窗", "铝合金门", "门窗组合"],
+      "materials": ["型材、颜色按方案确认", "玻璃与五金配置按需求确认", "安装尺寸以上门测量为准"],
+      "variant": "window",
+      "sortOrder": 20
+    },
+    {
+      "_id": "canopies",
+      "title": "雨棚 · 彩钢房",
+      "subtitle": "入户、庭院与实用空间",
+      "description": "结合现场结构和使用场景，沟通雨棚、彩钢房的尺寸、材料与搭配方式，重视遮雨、空间利用和整体外观。",
+      "products": ["入户雨棚", "露台雨棚", "不锈钢雨棚", "彩钢房"],
+      "materials": ["支撑结构与面板材料现场确认", "颜色与造型按需求定制", "排水与连接细节由工程师确认"],
+      "variant": "canopy",
+      "sortOrder": 30
+    },
+    {
+      "_id": "sunrooms",
+      "title": "阳光房",
+      "subtitle": "让露台成为生活的一部分",
+      "description": "以整体项目为单位沟通阳光房方案，结合空间尺寸、采光、通风和门窗配置，确定适合现场的结构与材料。",
+      "products": ["露台阳光房", "庭院阳光房", "阳光房门窗组合"],
+      "materials": ["骨架与玻璃配置按方案确认", "门窗开启方式按使用习惯确认", "现场条件与安装方式需工程师评估"],
+      "variant": "sunroom",
+      "sortOrder": 40
+    },
+    {
+      "_id": "gates",
+      "title": "拉闸门窗",
+      "subtitle": "门面、入户与日常防护",
+      "description": "根据门窗洞口与使用需求定制拉闸门窗，沟通开合方式、颜色和结构，与其他金属制品统一安装和搭配。",
+      "products": ["拉闸门", "拉闸窗", "门窗防护组合"],
+      "materials": ["材质与规格按需求确认", "开合空间需现场测量", "锁具与五金配置可沟通"],
+      "variant": "gate",
+      "sortOrder": 50
+    },
+    {
+      "_id": "accessories",
+      "title": "生活金属定制",
+      "subtitle": "把日常小需求做得更顺手",
+      "description": "提供晾衣杆、花架、空调架等金属制品定制，结合安装位置和实际用途确认尺寸、材料和固定方式。其他需求可直接电话咨询。",
+      "products": ["晾衣杆", "花架", "空调架", "其他金属制品"],
+      "materials": ["按使用场景选择材料", "尺寸与固定方式现场确认", "可与整套项目一并测量安装"],
+      "variant": "accessory",
+      "sortOrder": 60
+    }
+  ]
+}

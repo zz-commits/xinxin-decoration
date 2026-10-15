@@ -1,0 +1,20 @@
+{
+  "description": "在云开发数据库控制台逐项创建。asc 为升序，desc 为降序；本文件不会自动修改云端。",
+  "indexes": [
+    { "collection": "services", "name": "services_status_sortOrder", "fields": [["status", "asc"], ["sortOrder", "asc"]] },
+    { "collection": "cases", "name": "cases_status_publishedAt", "fields": [["status", "asc"], ["publishedAt", "desc"]] },
+    { "collection": "cases", "name": "cases_status_categoryIds_publishedAt", "fields": [["status", "asc"], ["categoryIds", "asc"], ["publishedAt", "desc"]] },
+    { "collection": "projects", "name": "projects_ownerOpenid_updatedAt", "fields": [["ownerOpenid", "asc"], ["updatedAt", "desc"]] },
+    { "collection": "projects", "name": "projects_updatedAt", "fields": [["updatedAt", "desc"]] },
+    { "collection": "project_locations", "name": "locations_projectId_createdAt", "fields": [["projectId", "asc"], ["createdAt", "asc"]] },
+    { "collection": "assets", "name": "assets_projectId_locationId_type_status", "fields": [["projectId", "asc"], ["locationId", "asc"], ["type", "asc"], ["status", "asc"]] },
+    { "collection": "assets", "name": "assets_projectId_status", "fields": [["projectId", "asc"], ["status", "asc"]] },
+    { "collection": "assets", "name": "assets_projectId_locationId_status", "fields": [["projectId", "asc"], ["locationId", "asc"], ["status", "asc"]] },
+    { "collection": "assets", "name": "assets_projectId_type_status_reviewStatus_createdAt", "fields": [["projectId", "asc"], ["type", "asc"], ["status", "asc"], ["reviewStatus", "asc"], ["createdAt", "desc"]] },
+    { "collection": "generation_jobs", "name": "jobs_projectId_createdAt", "fields": [["projectId", "asc"], ["createdAt", "desc"]] },
+    { "collection": "generation_jobs", "name": "jobs_projectId_status", "fields": [["projectId", "asc"], ["status", "asc"]] },
+    { "collection": "generation_jobs", "name": "jobs_status_createdAt", "fields": [["status", "asc"], ["createdAt", "asc"]] },
+    { "collection": "generation_jobs", "name": "jobs_status_lockedUntil", "fields": [["status", "asc"], ["lockedUntil", "asc"]] },
+    { "collection": "share_links", "name": "shares_projectId_status_createdAt", "fields": [["projectId", "asc"], ["status", "asc"], ["createdAt", "desc"]] }
+  ]
+}

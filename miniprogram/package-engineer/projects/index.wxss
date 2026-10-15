@@ -1,0 +1,13 @@
+.project-form { margin-bottom: 26rpx; }
+.field-label { font-size: 25rpx; color: #697365; margin: 20rpx 0 10rpx; }
+.field { padding: 20rpx; height: 88rpx; border-radius: 12rpx; background: #f1eee6; font-size: 28rpx; }
+.save-button { margin-top: 30rpx; }
+.project-row { display: block; width: 100%; margin: 0 0 20rpx; padding: 28rpx; background: #fffdf9; color: #303b31; border: 0; border-radius: 22rpx; text-align: left; line-height: 1.6; }
+.project-top { display: flex; justify-content: space-between; gap: 18rpx; align-items: flex-start; }
+.project-title { font-size: 31rpx; font-weight: 500; }
+.project-status { font-size: 21rpx; padding: 6rpx 14rpx; border-radius: 999rpx; background: #f0e8d9; color: #9c7149; white-space: nowrap; }
+.project-subtitle { margin-top: 16rpx; }
+.project-arrow { display: block; margin-top: 24rpx; color: #ae592e; font-size: 24rpx; }
+.identity-button, .first-project { margin-top: 30rpx; }
+.identity-note { margin-top: 20rpx; }
+.identity-value { display: block; margin-top: 24rpx; font-size: 24rpx; line-height: 1.6; word-break: break-all; color: #616863; }

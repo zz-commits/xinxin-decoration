@@ -1,0 +1,7 @@
+.filters { margin: 34rpx 0 30rpx; white-space: nowrap; width: 100%; }
+.filter-inner { display: inline-flex; gap: 14rpx; padding-bottom: 6rpx; }
+.filter { display: inline-block; margin: 0; padding: 16rpx 24rpx; border: 1rpx solid #d8d3c6; border-radius: 999rpx; background: transparent; color: #777c73; line-height: 1.5; font-size: 25rpx; }
+.filter.active { background: #303b31; color: #fffdf9; border-color: #303b31; }
+.empty-mark { padding: 25rpx 0 35rpx; color: #a88b68; letter-spacing: 12rpx; font-size: 24rpx; }
+.empty-contact { margin: 34rpx auto 0; max-width: 380rpx; }
+.list-end { padding: 30rpx; color: #9b9d94; font-size: 23rpx; text-align: center; }

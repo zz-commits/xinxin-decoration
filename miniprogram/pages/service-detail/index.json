@@ -1,0 +1,4 @@
+{
+  "navigationBarTitleText": "业务详情",
+  "usingComponents": { "service-art": "/components/service-art/index" }
+}

@@ -1,0 +1,16 @@
+.disclaimer { margin: 26rpx 0; padding: 24rpx; background: #eee3d4; border-radius: 16rpx; color: #8c6d4d; font-size: 24rpx; line-height: 1.8; }
+.locations { width: 100%; margin: 32rpx 0; white-space: nowrap; }
+.location-inner { display: inline-flex; gap: 14rpx; }
+.location-button { margin: 0; padding: 16rpx 26rpx; background: transparent; border: 1rpx solid #d4cabc; border-radius: 999rpx; font-size: 26rpx; line-height: 1.5; color: #737a6c; }
+.location-button.active { background: #303b31; border-color: #303b31; color: #fffdf9; }
+.preview-card { display: block; width: 100%; padding: 0; margin: 24rpx 0; border: 0; border-radius: 22rpx; overflow: hidden; background: #fffdf9; color: #303b31; text-align: left; }
+.image-wrap { position: relative; }
+.image-wrap image { width: 100%; display: block; min-height: 200rpx; background: #e9e2d7; }
+.ai-label { position: absolute; top: 20rpx; left: 20rpx; padding: 9rpx 17rpx; color: #fff; background: #303b31; border-radius: 999rpx; font-size: 22rpx; }
+.image-caption { display: flex; justify-content: space-between; padding: 24rpx; line-height: 1.6; font-size: 28rpx; }
+.contact-button { margin-top: 32rpx; }
+.image-overlay { position: fixed; z-index: 100; inset: 0; display: flex; flex-direction: column; padding: 30rpx 24rpx calc(30rpx + env(safe-area-inset-bottom)); background: #222823; color: #fffdf9; }
+.overlay-top { display: flex; align-items: center; justify-content: space-between; font-size: 25rpx; padding-top: env(safe-area-inset-top); }
+.close-button { margin: 0; padding: 14rpx 20rpx; border: 0; background: #3b433b; color: #fffdf9; font-size: 25rpx; line-height: 1.5; border-radius: 12rpx; }
+.expanded-image { width: 100%; min-height: 0; flex: 1; }
+.overlay-disclaimer { padding: 22rpx 12rpx; font-size: 24rpx; line-height: 1.8; color: #d2c7b6; }

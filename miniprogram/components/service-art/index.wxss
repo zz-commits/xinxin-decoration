@@ -1,0 +1,22 @@
+:host { display: block; }
+.art { position: relative; height: 150rpx; overflow: hidden; color: #9f7353; }
+.structure { display: flex; justify-content: space-evenly; position: absolute; width: 67%; height: 54%; bottom: 25%; left: 16%; border: 5rpx solid currentColor; }
+.bar { height: 100%; width: 4rpx; background: currentColor; }
+.ground { position: absolute; bottom: 19%; left: 9%; width: 82%; height: 1rpx; background: #d9cdbb; transform: skewY(-4deg); }
+.art-window .structure { width: 50%; height: 72%; left: 25%; bottom: 18%; border-width: 5rpx; }
+.art-window .bar { display: none; }
+.art-window .bar:first-child { display: block; }
+.art-window .crossbar { position: absolute; top: 48%; left: 0; width: 100%; height: 4rpx; background: currentColor; }
+.art-canopy .structure { height: 46%; bottom: 24%; border-bottom: none; border-top-width: 7rpx; transform: skewY(-12deg); }
+.art-canopy .bar { display: none; }
+.art-canopy .crossbar { position: absolute; top: -24rpx; left: -5rpx; right: -10rpx; height: 20rpx; border: 4rpx solid currentColor; transform: skewX(-35deg); background: #e9e2d6; }
+.art-sunroom .structure { height: 56%; width: 58%; bottom: 20%; left: 20%; transform: skewY(-6deg); }
+.art-sunroom .crossbar { position: absolute; top: -27%; left: -5rpx; right: -5rpx; height: 23%; border: 4rpx solid currentColor; transform: skewX(-32deg); background: #e5ded1; }
+.art-gate .bar { width: 3rpx; transform: rotate(21deg); }
+.art-gate .structure::after { content: ''; position: absolute; inset: 0; background: repeating-linear-gradient(111deg, transparent 0, transparent 25rpx, #9f7353 26rpx, #9f7353 29rpx, transparent 30rpx); }
+.art-accessory .structure { width: 48%; left: 26%; height: 62%; border-top: 0; }
+.art-accessory .bar { display: none; }
+.art-accessory .crossbar { position: absolute; top: 46%; left: -6rpx; right: -6rpx; border-top: 5rpx solid currentColor; }
+.large { height: 300rpx; }
+.large .structure { border-width: 8rpx; }
+.large .bar { width: 6rpx; }

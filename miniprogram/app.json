@@ -1,0 +1,35 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/services/index",
+    "pages/cases/index",
+    "pages/contact/index",
+    "pages/service-detail/index",
+    "pages/case-detail/index",
+    "pages/developer/index",
+    "pages/project-share/index"
+  ],
+  "subPackages": [
+    { "root": "package-engineer", "pages": ["projects/index", "project/index", "generation/index"] }
+  ],
+  "tabBar": {
+    "custom": true,
+    "color": "#8a8e8e",
+    "selectedColor": "#ad572b",
+    "backgroundColor": "#fffdf9",
+    "list": [
+      { "pagePath": "pages/index/index", "text": "首页" },
+      { "pagePath": "pages/services/index", "text": "业务" },
+      { "pagePath": "pages/cases/index", "text": "案例" },
+      { "pagePath": "pages/contact/index", "text": "联系" }
+    ]
+  },
+  "window": {
+    "navigationBarTitleText": "鑫新装饰",
+    "navigationBarBackgroundColor": "#25292c",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#f4f2ed"
+  },
+  "lazyCodeLoading": "requiredComponents",
+  "sitemapLocation": "sitemap.json"
+}

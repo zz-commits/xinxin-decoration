@@ -1,0 +1,5 @@
+.gallery-image { display: block; width: 100%; margin-bottom: 18rpx; border-radius: 22rpx; background: #e7e2d6; }
+.case-description { font-size: 28rpx; color: #606b60; line-height: 1.9; white-space: pre-wrap; }
+.location { margin-top: 20rpx; }
+.location-name { font-size: 31rpx; font-weight: 500; }
+.material { margin-top: 18rpx; }

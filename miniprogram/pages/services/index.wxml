@@ -1,0 +1,11 @@
+<view class="screen with-tabs">
+  <view class="page-kicker">PRODUCTS / SERVICES</view><view class="page-title">一个家，<view>不止一种定制。</view></view><view class="page-intro">从门窗到栏杆，从遮雨到采光。不同产品可以组合设计，按安装位置统一测量。</view>
+  <view wx:if="{{loading}}" class="loading-state">正在加载业务资料…</view>
+  <view wx:elif="{{error}}" class="error-state">{{error}}<button class="secondary-action" bindtap="refresh">重新加载</button></view>
+  <view wx:else class="section service-list">
+    <button wx:for="{{services}}" wx:key="_id" class="service-row" data-id="{{item._id}}" bindtap="openDetail"><view class="art-wrap"><service-art variant="{{item.variant}}" /></view><view class="row-copy"><view class="row-title">{{item.title}}</view><view class="muted">{{item.subtitle}}</view></view><text class="row-arrow">↗</text></button>
+    <view wx:if="{{!services.length}}" class="empty-state"><view class="empty-title">业务资料正在整理</view><view class="muted">欢迎联系店铺沟通定制需求。</view></view>
+  </view>
+  <view class="section surface"><view class="section-title">不确定怎么选？</view><view class="page-intro">先告诉我们安装在哪里、想解决什么问题，再一起确定产品与材料。</view><button class="primary-action consult" bindtap="openContact">联系店铺聊需求</button></view>
+  <view wx:if="{{localPreview}}" class="development-note">开发预览 · 云端内容尚未接通</view>
+</view>

@@ -1,0 +1,4 @@
+{
+  "*": { "invoke": "auth != null && auth.loginType != 'ANONYMOUS'" },
+  "generation-worker": { "invoke": false }
+}

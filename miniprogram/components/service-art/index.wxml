@@ -1,0 +1,4 @@
+<view class="art {{large ? 'large' : ''}} art-{{variant}}" aria-hidden="true">
+  <view class="structure"><view wx:for="{{bars}}" wx:key="*this" class="bar"></view><view class="crossbar"></view></view>
+  <view class="ground"></view>
+</view>

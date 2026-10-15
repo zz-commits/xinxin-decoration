@@ -1,0 +1,13 @@
+<view class="screen with-tabs">
+  <view class="page-kicker">SELECTED PROJECTS</view><view class="page-title">把生活的想法，<view>做成家的模样。</view></view><view class="page-intro">一套房、多个位置、多种产品。这里展示完整项目里的定制与安装细节。</view>
+  <scroll-view class="filters" scroll-x enhanced show-scrollbar="{{false}}"><view class="filter-inner"><button class="filter {{!categoryId ? 'active' : ''}}" data-id="" bindtap="selectCategory">全部项目</button><button wx:for="{{services}}" wx:key="_id" class="filter {{categoryId === item._id ? 'active' : ''}}" data-id="{{item._id}}" bindtap="selectCategory">{{item.title}}</button></view></scroll-view>
+  <view wx:if="{{loading}}" class="loading-state">正在加载案例…</view>
+  <view wx:elif="{{error}}" class="error-state">{{error}}<button class="secondary-action" bindtap="refresh">重新加载</button></view>
+  <block wx:else>
+    <button wx:for="{{items}}" wx:key="_id" class="case-card" data-id="{{item._id}}" bindtap="openCase"><image wx:if="{{item.coverImage}}" class="case-cover" src="{{item.coverImage}}" mode="aspectFill" /><view wx:else class="case-no-cover">案例图片待补充</view><view class="case-info"><view class="case-title">{{item.title}}</view><view class="case-summary">{{item.summary}}</view><view class="tag-row"><text class="tag">{{item.locations.length}} 个安装位置</text><text wx:if="{{item.community}}" class="tag">{{item.community}}</text></view></view></button>
+    <view wx:if="{{!items.length}}" class="empty-state"><view class="empty-mark">工艺 · 落地</view><view class="empty-title">真实案例，正在整理</view><view class="muted">有同类需求，可以先和我们聊聊。<view>案例会在取得展示许可后陆续补充。</view></view><button class="primary-action empty-contact" bindtap="openContact">咨询定制方案</button></view>
+    <view wx:if="{{loadingMore}}" class="loading-state">正在加载更多…</view>
+    <view wx:elif="{{items.length && !hasMore}}" class="list-end">已经看完全部项目</view>
+  </block>
+  <view wx:if="{{localPreview}}" class="development-note">开发预览 · 尚未连接云端案例数据</view>
+</view>

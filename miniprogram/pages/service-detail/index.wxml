@@ -1,0 +1,15 @@
+<view class="screen">
+  <view wx:if="{{loading}}" class="loading-state">正在加载…</view>
+  <view wx:elif="{{error}}" class="error-state">{{error}}<button class="secondary-action" bindtap="refresh">重新加载</button></view>
+  <view wx:elif="{{!service}}" class="empty-state"><view class="empty-title">该业务暂未发布</view><button class="text-link" bindtap="openContact">联系店铺</button></view>
+  <block wx:else>
+    <view class="page-kicker">按需定制 · 现场测量</view><view class="page-title">{{service.title}}</view><view class="page-intro">{{service.subtitle}}</view>
+    <view class="detail-art"><service-art variant="{{service.variant}}" large /><text>产品结构示意，具体以沟通方案为准</text></view>
+    <view class="description">{{service.description}}</view>
+    <view class="section"><view class="section-title">可沟通的产品方向</view><view class="tag-row"><text wx:for="{{service.products}}" wx:key="*this" class="tag">{{item}}</text></view></view>
+    <view class="section surface"><view class="section-title">材料与细节，一起确认</view><view wx:for="{{service.materials}}" wx:key="*this" class="material-row"><text>·</text><view>{{item}}</view></view></view>
+    <view class="section"><view class="section-title">一套房，可以组合多种产品</view><view class="page-intro">按阳台、卧室窗、入户等安装位置组织方案。现场测量后，再结合尺寸、材料与颜色要求沟通效果预览。</view></view>
+    <view class="action-row"><button class="primary-action" bindtap="call">电话咨询</button><button class="secondary-action" bindtap="openContact">查看联系方式</button></view>
+    <view wx:if="{{localPreview}}" class="development-note">开发预览 · 云端内容尚未接通</view>
+  </block>
+</view>

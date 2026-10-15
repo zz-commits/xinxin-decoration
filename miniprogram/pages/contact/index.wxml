@@ -1,0 +1,12 @@
+<view class="screen with-tabs">
+  <view class="page-kicker">LET'S TALK</view><view class="page-title">定制的第一步，<view>从聊聊开始。</view></view><view class="page-intro">告诉我们安装位置与想法，细节可以慢慢沟通。</view>
+  <view wx:if="{{loading}}" class="loading-state">正在加载联系方式…</view>
+  <view wx:elif="{{error}}" class="error-state">{{error}}<button class="secondary-action" bindtap="refresh">重新加载</button></view>
+  <block wx:else>
+    <view class="section surface"><view class="section-title">电话咨询</view><button wx:for="{{store.phones}}" wx:key="*this" class="phone-row" data-phone="{{item}}" bindtap="call"><text>{{item}}</text><text class="call-label">拨打 ↗</text></button><view wx:if="{{!store.phones.length}}" class="page-intro">电话资料待补充</view></view>
+    <view class="section surface"><view class="section-top"><view class="section-title">微信沟通</view><text wx:if="{{!store.wechatId && !store.wechatQrImage}}" class="small-label">待补充</text></view><image wx:if="{{store.wechatQrImage}}" class="wechat-qr" src="{{store.wechatQrImage}}" mode="aspectFit" bindtap="previewQr" /><view wx:if="{{store.wechatId}}" class="wechat-id">微信号：{{store.wechatId}}</view><button wx:if="{{store.wechatId}}" class="secondary-action" bindtap="copyWechat">复制微信号</button><view wx:if="{{!store.wechatId && !store.wechatQrImage}}" class="muted">店铺微信信息正在补充，可先通过电话联系。</view></view>
+    <view class="section store-block"><view class="section-title">{{store.name}} · {{store.branchName}}</view><view class="store-address">{{store.address || '详细地址待补充'}}</view><view class="muted">营业时间：{{store.businessHours || '请电话确认'}}</view><button wx:if="{{store.address}}" class="text-link address-copy" bindtap="copyAddress">复制店铺地址 →</button><view class="divider"></view><view class="muted about">{{store.description}}</view></view>
+    <view wx:if="{{localPreview}}" class="development-note">开发预览：电话与地址使用店铺已确认的信息。</view>
+  </block>
+  <view class="staff-links"><button class="text-link" bindtap="openEngineer">工程师工作台</button><button wx:if="{{development}}" class="text-link" bindtap="openDeveloper">开发环境检查</button></view>
+</view>

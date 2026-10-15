@@ -1,0 +1,35 @@
+<view class="screen with-tabs">
+  <view class="home-brand"><image class="logo" src="/assets/logo-square-v1.png" mode="aspectFit" /><view><view class="brand-title">鑫新装饰</view><view class="small-label">四河小区店 · 金属制品定制</view></view><text class="brand-badge">一户一案</text></view>
+  <view class="hero">
+    <view class="hero-kicker">CRAFTED FOR YOUR HOME</view>
+    <view class="hero-heading">每一寸金属，<view>都为生活定制。</view></view>
+    <view class="hero-copy">栏杆 · 门窗 · 雨棚 · 阳光房</view>
+    <view class="hero-art"><service-art variant="railing" large /></view>
+    <button class="hero-link" bindtap="openServices"><text>探索定制业务</text><text>↗</text></button>
+    <view class="hero-footer"><text>现场测量</text><text>按需定制</text><text>安装交付</text></view>
+  </view>
+
+  <view wx:if="{{loading}}" class="loading-state">正在加载店铺资料…</view>
+  <view wx:elif="{{error}}" class="error-state">{{error}}<button class="secondary-action" bindtap="refresh">重新加载</button></view>
+  <block wx:else>
+    <view class="section">
+      <view class="section-top"><view class="section-title">为不同空间，找到合适方案</view></view>
+      <view class="service-grid">
+        <button wx:for="{{services}}" wx:key="_id" class="service-card" data-id="{{item._id}}" bindtap="openService">
+          <view class="service-art"><service-art variant="{{item.variant}}" /></view>
+          <view class="service-title">{{item.title}}</view><view class="service-subtitle">{{item.subtitle}}</view><text class="service-arrow">↗</text>
+        </button>
+      </view>
+    </view>
+
+    <view class="section">
+      <view class="section-top"><view class="section-title">实景案例</view><button class="text-link" bindtap="openCases">查看全部 →</button></view>
+      <button wx:for="{{cases}}" wx:key="_id" class="case-card" data-id="{{item._id}}" bindtap="openCase"><image wx:if="{{item.coverImage}}" class="case-cover" src="{{item.coverImage}}" mode="aspectFill" /><view wx:else class="case-no-cover">案例图片待补充</view><view class="case-info"><view class="case-title">{{item.title}}</view><view class="case-summary">{{item.summary}}</view><view class="tag-row"><text class="tag">{{item.locations.length}} 个安装位置</text><text wx:if="{{item.community}}" class="tag">{{item.community}}</text></view></view></button>
+      <view wx:if="{{!cases.length}}" class="empty-state"><view class="empty-title">每一个项目，都有自己的答案</view><view class="muted">真实完工案例正在整理，欢迎电话咨询同类定制需求。</view><button class="text-link" bindtap="openContact">联系店铺 →</button></view>
+    </view>
+
+    <view class="section process"><view class="page-kicker">从想法到落地</view><view class="section-title process-title">看得见方案，聊得清细节。</view><view class="process-step"><text>01</text><view><view>沟通需求</view><view class="muted">先聊产品、安装位置与使用习惯。</view></view></view><view class="process-step"><text>02</text><view><view>现场测量</view><view class="muted">工程师确认尺寸、结构与材料要求。</view></view></view><view class="process-step"><text>03</text><view><view>方案预览</view><view class="muted">结合现场资料，辅助沟通效果与细节。</view></view></view></view>
+    <view class="section contact-strip"><view class="section-title">有个想法？和我们聊聊。</view><view class="muted">{{store.address}}</view><view class="action-row"><button class="primary-action" bindtap="call">电话咨询</button><button class="secondary-action" bindtap="openContact">店铺信息</button></view></view>
+    <view wx:if="{{localPreview}}" class="development-note">开发预览：当前使用已确认的店铺资料，云端内容尚未接通。</view>
+  </block>
+</view>

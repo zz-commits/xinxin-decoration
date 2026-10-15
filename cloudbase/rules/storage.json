@@ -1,0 +1,4 @@
+{
+  "read": "/^public\\//.test(resource.path)",
+  "write": false
+}

@@ -1,0 +1,5 @@
+.detail-art { margin: 32rpx 0; background: #e9e2d6; border-radius: 24rpx; overflow: hidden; text-align: center; padding-bottom: 24rpx; }
+.detail-art text { font-size: 21rpx; color: #80765f; }
+.description { font-size: 29rpx; line-height: 1.9; color: #555e57; }
+.material-row { display: flex; gap: 18rpx; margin-top: 22rpx; font-size: 26rpx; color: #6c746a; }
+.material-row > text { color: #a77950; }

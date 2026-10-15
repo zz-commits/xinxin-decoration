@@ -1,0 +1,15 @@
+node_modules/
+miniprogram/miniprogram_npm/
+project.private.config.json
+.DS_Store
+*.log
+.env
+.env.*
+!.env.example
+
+# 客户现场原图、工程师手绘图及收件记录仅本地保存。
+# 经确认的发布副本另行管理，不自动随公开代码仓库发布。
+/assets/project-materials/
+
+# 本机临时授权导入文件，不提交微信身份信息。
+/local-setup/

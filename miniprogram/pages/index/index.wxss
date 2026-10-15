@@ -1,0 +1,24 @@
+.home-brand { display: flex; align-items: center; margin-bottom: 32rpx; gap: 20rpx; }
+.logo { width: 90rpx; height: 90rpx; border-radius: 20rpx; flex-shrink: 0; }
+.brand-title { font-size: 36rpx; font-weight: 600; }
+.brand-badge { margin-left: auto; writing-mode: vertical-rl; font-size: 23rpx; letter-spacing: 5rpx; color: #a68b69; }
+.hero { position: relative; padding: 38rpx 36rpx 0; overflow: hidden; border-radius: 28rpx; background: #272e2c; color: #fffdf9; }
+.hero-kicker { font-size: 18rpx; letter-spacing: 4rpx; color: #cfa57c; }
+.hero-heading { font-size: 53rpx; line-height: 1.4; font-weight: 500; margin-top: 30rpx; position: relative; z-index: 1; }
+.hero-copy { color: #b9c0b7; font-size: 25rpx; margin-top: 22rpx; position: relative; z-index: 1; }
+.hero-art { position: absolute; width: 410rpx; right: -100rpx; top: 147rpx; opacity: .55; transform: perspective(800rpx) rotateY(-25deg); }
+.hero-link { position: relative; z-index: 1; display: flex; justify-content: space-between; width: 315rpx; padding: 20rpx 0; margin: 50rpx 0 28rpx; border: 0; border-radius: 0; border-top: 1rpx solid #526054; background: transparent; color: #e0b382; font-size: 27rpx; text-align: left; line-height: 1.5; }
+.hero-footer { display: flex; justify-content: space-between; padding: 24rpx 0; border-top: 1rpx solid #465047; color: #bdc5bc; font-size: 22rpx; }
+.service-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 18rpx; }
+.service-card { position: relative; margin: 0; padding: 0 20rpx 24rpx; background: #eae4d9; border: 0; border-radius: 20rpx; text-align: left; color: #25292c; line-height: 1.5; overflow: hidden; }
+.service-card:nth-child(2n) { background: #fdfbf6; }
+.service-art { margin: 0 -12rpx; }
+.service-title { font-size: 29rpx; font-weight: 500; }
+.service-subtitle { font-size: 21rpx; color: #7b7d73; margin-top: 10rpx; padding-right: 12rpx; }
+.service-arrow { position: absolute; top: 18rpx; right: 18rpx; color: #a48a68; font-size: 27rpx; }
+.process { padding: 32rpx; border-top: 1rpx solid #d8d4c8; border-bottom: 1rpx solid #d8d4c8; }
+.process-title { margin-top: 14rpx; font-size: 35rpx; }
+.process-step { display: flex; gap: 24rpx; margin-top: 28rpx; }
+.process-step > text { font-size: 24rpx; color: #a47d57; padding-top: 3rpx; }
+.process-step .muted { margin-top: 5rpx; }
+.contact-strip .muted { margin-top: 10rpx; }

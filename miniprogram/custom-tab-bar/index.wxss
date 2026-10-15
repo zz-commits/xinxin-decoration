@@ -1,0 +1,16 @@
+.tab-bar { position: fixed; z-index: 20; bottom: 0; left: 0; right: 0; display: flex; padding: 12rpx 18rpx calc(12rpx + env(safe-area-inset-bottom)); border-top: 1rpx solid #e7e3dc; background: #fffdf9; }
+.tab { display: flex; flex: 1; flex-direction: column; justify-content: center; align-items: center; padding: 10rpx 0; margin: 0; background: none; border: 0; border-radius: 0; color: #8a8e8e; font-size: 22rpx; line-height: 1.6; }
+.tab::after { border: 0; }
+.selected { color: #ad572b; }
+.tab-icon { position: relative; width: 34rpx; height: 34rpx; margin-bottom: 6rpx; }
+.icon-home { width: 28rpx; height: 24rpx; margin-top: 10rpx; margin-bottom: 6rpx; border: 3rpx solid currentColor; border-top: 0; border-radius: 2rpx; }
+.icon-home::before { content: ''; position: absolute; left: 1rpx; top: -11rpx; width: 19rpx; height: 19rpx; border-left: 3rpx solid currentColor; border-top: 3rpx solid currentColor; transform: rotate(45deg); }
+.icon-home .icon-stroke:first-child { position: absolute; width: 8rpx; height: 13rpx; bottom: 0; left: 7rpx; border: 2rpx solid currentColor; border-bottom: 0; }
+.icon-services { display: grid; grid-template-columns: 1fr 1fr; gap: 5rpx; }
+.icon-services .icon-stroke { border: 3rpx solid currentColor; border-radius: 3rpx; }
+.icon-cases { width: 31rpx; height: 30rpx; border: 3rpx solid currentColor; border-radius: 3rpx; }
+.icon-cases::after { content: ''; position: absolute; inset: 7rpx -9rpx -7rpx 7rpx; border-right: 3rpx solid currentColor; border-bottom: 3rpx solid currentColor; border-radius: 3rpx; }
+.icon-cases .icon-stroke:first-child { position: absolute; bottom: 3rpx; left: 3rpx; width: 17rpx; height: 10rpx; border-left: 3rpx solid currentColor; border-top: 3rpx solid currentColor; transform: rotate(35deg); }
+.icon-contact { border: 3rpx solid currentColor; border-radius: 9rpx; }
+.icon-contact::after { content: ''; position: absolute; bottom: -6rpx; left: 5rpx; width: 8rpx; height: 8rpx; border-left: 3rpx solid currentColor; border-bottom: 3rpx solid currentColor; background: #fffdf9; transform: skewY(-35deg); }
+.icon-contact .icon-stroke:first-child { position: absolute; top: 12rpx; left: 5rpx; right: 5rpx; border-top: 3rpx solid currentColor; }

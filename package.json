@@ -1,0 +1,16 @@
+{
+  "name": "xinxin-decoration",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "sync:domain": "node scripts/sync-domain.mjs",
+    "build:content": "node scripts/build-content.mjs",
+    "typecheck": "tsc --noEmit",
+    "check": "node scripts/check-project.mjs",
+    "test": "node --test tests/*.test.cjs"
+  },
+  "devDependencies": {
+    "miniprogram-api-typings": "5.2.3",
+    "typescript": "5.6.3"
+  }
+}

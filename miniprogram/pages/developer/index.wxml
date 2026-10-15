@@ -1,0 +1,35 @@
+<view class="page">
+  <view class="brand">
+    <image class="brand-logo" src="/assets/logo-square-v1.png" mode="aspectFit" />
+    <view>
+      <view class="brand-name">鑫新装饰</view>
+      <view class="brand-subtitle">不锈钢 · 门窗 · 定制工程</view>
+    </view>
+  </view>
+
+  <view class="hero">
+    <view class="eyebrow">上门测量 · 按需定制 · 本地安装</view>
+    <view class="hero-title"><view>用扎实工艺，</view><view>定制安心的家。</view></view>
+    <view class="hero-description">栏杆、扶手、护栏、门窗、雨棚、阳光房及各类金属制品定制。</view>
+  </view>
+
+  <view class="panel">
+    <view class="panel-heading">
+      <view class="panel-title">开发环境准备</view>
+      <view class="badge {{connected ? 'badge-success' : ''}}">{{connected ? '已连接' : '配置中'}}</view>
+    </view>
+    <view class="status-title">{{statusTitle}}</view>
+    <view class="description">{{statusDescription}}</view>
+    <view class="environment" wx:if="{{envId}}">环境 ID：{{envId}}</view>
+    <view class="description checked-at" wx:if="{{checkedAt}}">{{checkedAt}}</view>
+    <button class="primary-button" bindtap="checkConnection" loading="{{checking}}" disabled="{{checking || !envId}}">{{checking ? '正在检查' : '检查云函数连接'}}</button>
+  </view>
+
+  <view class="panel">
+    <view class="panel-title">接下来完成连接检查</view>
+    <view class="step"><text class="step-number">1</text><view><view>选择开发环境</view><view class="description">在 cloudfunctions 的当前环境菜单中选择 cloud1，核对完整环境 ID。</view></view></view>
+    <view class="step"><text class="step-number">2</text><view><view>部署检查函数</view><view class="description">右键 cloudfunctions/healthcheck，选择上传并部署：云端安装依赖。</view></view></view>
+    <view class="step"><text class="step-number">3</text><view><view>编译并验证</view><view class="description">重新编译后，点击上方「检查云函数连接」。</view></view></view>
+  </view>
+  <view class="footer">此页面用于开发环境联调，业务页面后续接入。</view>
+</view>

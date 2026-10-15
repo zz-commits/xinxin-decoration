@@ -1,0 +1,11 @@
+.summary-line { margin-top: 18rpx; font-size: 27rpx; word-break: break-word; }
+.structure-summary { margin-top: 22rpx; white-space: pre-wrap; font-size: 26rpx; color: #485343; line-height: 1.9; }
+.notice { padding: 20rpx; margin-top: 20rpx; border-radius: 12rpx; background: #eee5d8; color: #806748; font-size: 24rpx; }
+.photo-card { margin-top: 24rpx; overflow: hidden; border-radius: 20rpx; background: #fffdf9; }
+.source-image { display: block; width: 100%; height: 360rpx; background: #e6dece; }
+.photo-caption { padding: 24rpx; font-size: 28rpx; }
+.sketch-grid { display: flex; flex-wrap: wrap; gap: 18rpx; margin-top: 22rpx; }
+.sketch-grid image { width: 180rpx; height: 180rpx; background: #eee8dc; border-radius: 10rpx; }
+.check-row { display: flex; align-items: flex-start; gap: 14rpx; margin-top: 28rpx; font-size: 25rpx; line-height: 1.8; }
+.check-row checkbox { flex-shrink: 0; }
+.check-row text { flex: 1; }

@@ -1,0 +1,5 @@
+{
+  "navigationBarTitleText": "鑫新装饰",
+  "enablePullDownRefresh": true,
+  "usingComponents": { "service-art": "/components/service-art/index" }
+}

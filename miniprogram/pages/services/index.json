@@ -1,0 +1,5 @@
+{
+  "navigationBarTitleText": "定制业务",
+  "enablePullDownRefresh": true,
+  "usingComponents": { "service-art": "/components/service-art/index" }
+}

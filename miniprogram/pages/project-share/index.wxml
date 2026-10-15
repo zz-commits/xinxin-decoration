@@ -1,0 +1,15 @@
+<view class="screen">
+  <view wx:if="{{loading}}" class="loading-state">正在加载专属方案…</view>
+  <view wx:elif="{{error}}" class="error-state">{{error}}<button class="secondary-action" bindtap="refresh">重新加载</button></view>
+  <view wx:elif="{{!project}}" class="empty-state"><view class="empty-title">这份方案暂时无法查看</view><view class="muted">分享可能已过期、停用，或效果图正在调整。请联系工程师获取新的预览。</view><button class="primary-action contact-button" bindtap="openContact">联系店铺</button></view>
+  <block wx:else>
+    <view class="page-kicker">鑫新装饰 · 工程师已确认</view><view class="page-title">{{project.title}}</view><view class="page-intro">{{project.customerDisplayName ? project.customerDisplayName + '的专属方案' : '您的专属方案'}} · {{project.locations.length}} 个安装位置</view>
+    <view class="disclaimer">{{project.disclaimer}}</view>
+    <scroll-view class="locations" scroll-x enhanced show-scrollbar="{{false}}"><view class="location-inner"><button wx:for="{{project.locations}}" wx:key="id" class="location-button {{selectedIndex === index ? 'active' : ''}}" data-index="{{index}}" bindtap="chooseLocation">{{item.name}}</button></view></scroll-view>
+    <view wx:if="{{location}}"><view class="surface"><view class="section-title">{{location.name}}</view><view class="tag-row"><text class="tag">{{location.material}}</text><text wx:if="{{location.finish}}" class="tag">{{location.finish}}</text><text wx:if="{{location.color}}" class="tag">{{location.color}}</text></view></view>
+      <button wx:for="{{location.images}}" wx:key="url" class="preview-card" data-url="{{item.url}}" data-angle="{{item.angle}}" bindtap="expand"><view class="image-wrap"><image src="{{item.url}}" mode="widthFix" /><text class="ai-label">AI 效果预览</text></view><view class="image-caption"><text>{{item.angle}}</text><text class="muted">点击放大 ↗</text></view></button>
+    </view>
+    <view class="disclaimer">{{project.disclaimer}}</view><button class="primary-action contact-button" bindtap="openContact">联系店铺沟通方案</button>
+  </block>
+</view>
+<view wx:if="{{expandedImage}}" class="image-overlay" bindtap="closeImage"><view class="overlay-top"><text>AI 效果预览 · {{expandedAngle}}</text><button bindtap="closeImage" class="close-button" aria-label="关闭图片">关闭 ×</button></view><image class="expanded-image" src="{{expandedImage}}" mode="aspectFit" catchtap="preventBubble" /><view class="overlay-disclaimer">{{project.disclaimer}}</view></view>

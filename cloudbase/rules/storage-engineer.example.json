@@ -1,0 +1,4 @@
+{
+  "read": "/^public\\//.test(resource.path)",
+  "write": "auth != null && /^uploads\\//.test(resource.path) && resource.openid == auth.openid && auth.openid == 'REPLACE_WITH_ENGINEER_OPENID'"
+}
